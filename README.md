@@ -210,7 +210,7 @@ docker pull apacagnini/nestjs-api-app:latest
 
 To run the Docker container locally, execute:
 ```bash
-docker run -p 3000:3000 apacagnini/nestjs-api-app
+docker run --env-file .env -p 3000:3000 nestjs-api-app
 ```
 
 Ensure you have the necessary environment variables set in your local environment or passed to the container.
