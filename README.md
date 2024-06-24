@@ -14,11 +14,11 @@ The API is built to seamlessly integrate with MongoDB for data storage. It lever
 ## Technologies
 
 - [NestJS](https://nestjs.com/)
-- TypeScript
-- MongoDB
-- JWT (JSON Web Tokens)
-- Docker
-- Jest (Testing Framework)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [JWT (JSON Web Tokens)](https://jwt.io/)
+- [Docker](https://www.docker.com/)
+- [Jest](https://jestjs.io/)
 
 ## Installation
 
