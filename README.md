@@ -1,4 +1,4 @@
-# API Project
+# NestJS TypeScript API for Auth & User Management
 
 ## Description
 
@@ -15,9 +15,10 @@ The API is built to seamlessly integrate with MongoDB for data storage. It lever
 
 - [NestJS](https://nestjs.com/)
 - TypeScript
-- MongoDB Atlas
+- MongoDB
 - JWT (JSON Web Tokens)
 - Docker
+- Jest (Testing Framework)
 
 ## Installation
 
@@ -146,6 +147,11 @@ This endpoint retrieves event logs recorded in the system. Requires authenticati
 - **Responses**:
     - `200 OK`: List of logs.
 
+## Swagger
+
+Swagger documentation and testing interface is available at:
+- **URL**: `/api`
+
 ## Collection Size Limits
 
 ### Users Collection
@@ -155,11 +161,6 @@ If the `users` collection reaches the size limit specified by the `USERS_COLLECT
 ### Logs Collection
 
 If the `logs` collection reaches the size limit specified by the `LOGS_COLLECTION_MAX_SIZE` environment variable, the application will manage the logs by writing new logs while simultaneously deleting the oldest ones. This ensures that the collection does not exceed the size limit and continues to accept new log entries.
-
-## Swagger
-
-Swagger documentation and testing interface is available at:
-- **URL**: `/api`
 
 ## Deployment
 
@@ -181,7 +182,7 @@ Based on the project files, a Docker image was created and uploaded to a public 
 3. **Deploy on Koyeb**:
     - In the Koyeb dashboard, a new service was created.
     - "Docker Hub" was selected as the source.
-    - The Docker image name `apacagnini/nestjs-api-app:1.0` was provided.
+    - The Docker image name `apacagnini/nestjs-api-app` was provided.
     - The necessary environment variables for MongoDB Atlas and other configurations were set.
     - The service was deployed and ensured to start without issues.
 
